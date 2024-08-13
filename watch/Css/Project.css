@@ -1,0 +1,890 @@
+body {
+    font-family: fantasy;
+    width: 100%;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+
+
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.All1 {
+    display: flex;
+}
+
+.Header {
+    display: flex;
+    width: 100%;
+    height: 130px;
+    color: black;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+    margin-bottom: 25px;
+    -webkit-animation-name: Alaf;
+    -webkit-animation-duration: 2s;
+    animation-name: Alaf;
+    animation-duration: 2s;
+}
+
+.Left {
+    width: 50%;
+    margin-left: 5%;
+}
+
+
+#Logo {
+    cursor: pointer;
+    width: 170px;
+    height: 60px;
+}
+
+@media screen and (max-width:800px){
+   #Logo{
+    width: 140px;
+    height: 50pxd;
+   }
+}
+
+.Right {
+    text-align: center;
+    width: 50%;
+}
+
+.Right ul {
+    display: flex;
+    color: black;
+}
+
+.Right ul li {
+    display: flex;
+    text-decoration: none;
+    font-size: large;
+
+    padding-left: 8%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.Right ul li i {
+    color: rgb(151, 151, 151);
+    font-size: 25px;
+}
+
+.Right ul li i:hover {
+    transition: all 0.5s;
+    color: rgb(194, 192, 30);
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+.header {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color: #ffffff;
+    position: fixed;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 10;
+    border-bottom: dotted black 1px;
+}
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 60px;
+
+}
+
+
+.small-logo{
+    margin-top: 1%;
+    width: 120px;
+    height: 50px;
+}
+
+@media screen and (max-width:563px){
+    
+    .small-logo{
+        width: ;
+    }
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 12px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background-color: rgb(248, 248, 248);
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #262626;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(60, 60, 60, 0.5);
+}
+.sidebarMenuInner li a{
+    color: #272727;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    right: 15px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #212121;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+
+@media screen and (max-width:2000px) {
+    .topnav {
+        display: none;
+    }
+
+    .active {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:20000px){
+    .header{
+        display: none;
+    }
+}
+@media screen and (max-width:565px) {
+
+ 
+
+    .All {
+        display: block;
+    }
+
+    .Title{
+        margin-top: 15%;
+    }
+
+    body{
+        padding: 0;
+        margin: 0;
+        outline: 0;
+    }
+
+    .Header{
+        display: none;
+    }
+
+    .header {
+        display: block;
+
+    }
+
+
+}
+
+/* ##################################################################################################### */
+
+#banner-1{
+    width:99.5%;
+}
+
+@media screen and (max-width:565px){
+    #banner-1{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width:455px){
+    #banner-1{
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width:377px){
+    #banner-1{
+        margin-top: 23%;
+    }
+}
+
+@media screen and (max-width:345px){
+    #banner-1{
+        margin-top: 23%;
+    }
+}
+
+@media screen and (max-width:300px){
+    #banner-1{
+        margin-top: 28%;
+    }
+}
+
+@media screen and (max-width:230px){
+    #banner-1{
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width:220px){
+    #banner-1{
+        margin-top: 33%;
+    }
+}
+
+/* #################################### */
+
+.sss{
+    display: flex;
+    width: 100%;
+}
+
+.banner2{
+    width: 100%;
+    display: flex;
+
+
+}
+
+.size-banner2{
+    width: 100%;
+}
+.size-banner2 img{
+    width: 99%;
+}
+
+.banner3{
+    width: 100%;
+    display: flex;
+
+
+}
+
+.size-banner3{
+    width: 100%;
+    float: right        
+}
+.size-banner3 img{
+    width: 99%;
+}
+
+ 
+
+
+.DD
+
+.design{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(19, 19, 19);
+    width: 300px;
+    height: 380px;
+    margin: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.452);
+    overflow: hidden;
+    border-radius: 20%;
+    transition: all 1s;
+    align-items: center;
+}      
+
+
+
+.allo{
+    color: aliceblue;
+    margin-top: 10%;
+
+}
+
+.all{display: flex;}
+
+.size2{
+    width: 300px;
+    height: 200px;
+}
+
+.row{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.Cs{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(19, 19, 19);
+    width: 300px;
+    height: 380px;
+    margin: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.452);
+    overflow: hidden;
+    border-radius: 20%;
+    transition: all 1s;
+    align-items: center;
+}
+
+.detail{
+    text-align: center;
+    margin-top: 5%;
+    font-size: large;
+    margin-bottom: 10%;
+    color: rgb(211, 211, 211);
+}
+
+.Button{
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.size3{
+    width: 150px;
+    height: 150px;
+}
+
+
+.size-v{
+    width: 120px;
+    height: 50px;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.booton{
+    width: 60px;
+    height: 40px;
+    background-color: rgb(32, 32, 32);
+    color: aliceblue;
+    border-radius: 8px;
+    font-size: larger;
+    font-weight: 400;
+}
+
+
+.style{
+    background-color: rgb(217, 217, 217);
+    transition: 1s;
+}
+
+.style:hover{
+    background-color: rgb(137, 137, 137);
+    cursor: pointer;
+}
+
+
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #000000;
+    position: relative;
+    border-bottom: 1px dotted black;
+    margin-bottom: 10%;
+    animation-name: anima;
+    animation-duration: 0.4s;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    text-align: right;
+    animation-name: anima;
+    animation-duration: 1s;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: rgb(249, 249, 249);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    align-items: center;
+    
+  }
+
+  @-webkit-keyframes anima {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+    }
+    
+    @keyframes anima {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+    }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    color: azure;
+    background: rgb(0, 0, 0);
+    height: 60px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  #Lojo{
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav #myLinks:hover {
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 249, 249);
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-image: linear-gradient(to  right,#272103,#141414,#251f01,#161616,#211d05);
+    color: white;
+  }
+
+  .active:hover{
+    background-color: rgb(255, 255, 255);
+  }
+
+  @media screen and (max-width:2000px){
+    .topnav{
+        display: none;
+    }
+
+    .active{
+        display: none;
+    }
+  }
+
+
+
+
+/* ################################################## */
+
+.All{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width:845px){
+
+    .topnav{
+        display: block;
+    }
+
+    .active{
+        display: block;
+    }
+
+    .All{
+        display: block;
+    } 
+
+    .To-Control-All{
+        width: 250px;
+        height: 30px;
+        background-color: rgb(23, 23, 23);
+        color: aliceblue;
+        margin: 10px;
+        overflow: hidden;
+        text-align: center;
+        align-items: center;
+        border: 3px solid rgb(11, 11, 11);
+        border-radius: 8%;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+        margin-bottom: 10%;
+    }
+
+    .header{
+        display: none;
+
+    }
+
+
+}
+
+
+.swiper {
+  background-color: #3b3200;
+  border-radius: 20px;
+    margin-top: 5%;
+    text-align: center;
+    width: 1700px;
+    height: 100%;
+  }
+
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-wrapper{
+    display: flex;
+  }
+
+  .Alli{
+    margin-left: 5%;
+    display: flex;
+  }
+  .To-Control-All{
+    width: 280px;
+    height: 350px;
+    background-color:  #252000;
+    color: aliceblue;
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    border: 3px solid rgb(123, 123, 123);
+    border-radius: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    margin-bottom: 7%;
+    -webkit-animation-name: Alaf;
+    -webkit-animation-duration: 1s;
+    animation-name: Alaf;
+    animation-duration: 1s;
+    transform: scale();
+    font-size: 20px;
+}
+
+@-webkit-keyframes Alaf {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+    }
+    
+    @keyframes Alaf {
+    from {top:-300px; opacity:0}
+    to {top:-200; opacity:1}
+    }
+
+    @keyframes Alaf {
+    from {top:-200px; opacity:0}
+    to {top:-100; opacity:1}
+    }
+
+    @keyframes Alaf {
+    from {top:-100px; opacity:0}
+    to {top:0; opacity:1}
+    }
+
+#Image {
+    width: 280px;
+    height: 220px
+}
+
+.Name{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.Button{
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.size-v{
+    width: 120px;
+    height: 50px;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.style{
+    background-color: rgb(33, 33, 33);
+    transition: 1s;
+}
+
+.style:hover{
+    background-color: #1f1b08;
+    cursor: pointer;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+/* Modal Content */
+.modal-content {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+width: 80%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+from {top:-300px; opacity:0} 
+to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+color: white;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.header {
+padding: 2px 16px;
+background-color: #232323;
+color: white;
+text-align: center;
+text-align: center;
+}
+
+.vasat{
+    text-align: center;
+    align-items: center;
+}
+
+.body {padding: 2px 16px;
+color: #000;
+height: 60px;
+align-items: center;
+}
+    
+.footer {
+padding: 2px 16px;
+background-color: #232323;
+color: white;
+text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background: #ecececdb;
+}
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 150px auto;
+    padding: 20px;
+    gap: 20px;
+}
+.card-list .card-item {
+    background: #fff;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+}
+.card-list .card-item:hover {
+    border: 2px solid #000;
+}
+.card-list .card-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.card-list span {
+    display: inline-block;
+    background: #F7DFF5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.card-list .developer {
+    background-color: #F7DFF5; 
+    color: #B22485;
+}   
+.card-list .designer {
+    background-color: #d1e8ff;
+    color: #2968a8;
+}
+.card-list .editor {
+    background-color: #d6f8d6; 
+    color: #205c20;
+}
+.card-item h3 {
+    color: #000;
+    font-size: 1.438rem;
+    margin-top: 28px;
+    font-weight: 600;
+}
+.card-item .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-35deg);
+    height: 40px;
+    width: 40px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-top: 40px;
+    transition: 0.2s ease;
+}
+.card-list .card-item:hover .arrow  {
+    background: #000;
+    color: #fff; 
+}
+@media (max-width: 1200px) {
+    .card-list .card-item {
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .card-list {
+        margin: 0 auto;
+    }
+}
